@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS</title>
+    <!-- 3.External CSS 
+            link tag is used 
+            Attributes used ( rel, type)-->
+
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <!-- <!--2. Internal CSS
+         we write style tag inside  Head Tag  -->
+ <style>
+    p{
+        color:black !important; //no other can overwrite
+    }
+    h1{
+        color:blue;
+    }
+
+ </style> 
+</head>
+<body>
+
+    <!-- 1. Inline CSS  (using Inline CSS can make website code messy ) -->
+ 
+    <div>
+        <h1> First para</h1>
+        <!-- style attribute is mandatory -->
+        <p style ="color:red; background-color:aliceblue;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sint impedit nisi dolor adipisci illo, nemo quod, excepturi qui molestiae doloribus obcaecati necessitatibus tenetur quaerat tempore, quis rerum autem dolorem?</p>
+    </div>  
+    <!-- Can write multiple properties -->
+
+
+
+    <h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, aut.
+    </h2>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- Note:
+Precedence Of Types:
+1.Inline 
+2.Internal 
+3.External
+   <link Tag>: It is loosed tag   
+    - rel(relation) shows the relationship with stylesheet 
+    - type: tells it is file of type css
+    - href- link of css file 
+
+
+
+-->
