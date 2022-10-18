@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Website-Layout</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		/>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				font-family: arial;
+				display: flex;
+				flex-direction: column;
+				margin: 0;
+			}
+			header {
+				background: rgba(0, 0, 0, 0.2);
+				display: flex;
+				align-items: center;
+				padding: 10px 40px;
+			}
+			header ul {
+				list-style: none;
+				display: flex;
+				padding: 0;
+				margin: 0;
+			}
+			header a {
+				color: #fff;
+			}
+			#logo {
+				font-size: 30px;
+			}
+			#menu {
+				margin: 0 auto;
+			}
+			#menu li {
+				padding: 10px;
+			}
+			#social-links li {
+				padding: 5px;
+			}
+			a {
+				text-decoration: none;
+			}
+			.services-container {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			.service-box {
+				border: 1px solid #eee;
+				flex-basis: 32%;
+				max-width: 370px;
+				padding: 10px;
+				height: 684px;
+			}
+			.call-to-action {
+				align-self: flex-start;
+				margin-top: auto;
+			}
+			#main {
+				display: flex;
+			}
+			aside {
+				padding: 10px;
+				flex: 0 0 20vw;
+				background-color: beige;
+			}
+			aside ul {
+				list-style: none;
+				padding: 0;
+			}
+			aside ul a {
+				color: #566c2b;
+				display: block;
+				padding: 10px;
+				border-bottom: 1px solid grey;
+			}
+			article {
+				padding: 10px;
+			}
+			footer {
+				background: rgba(0, 0, 0, 0.2);
+				color: #fff;
+				text-align: center;
+				padding: 15px 0;
+			}
+			@media screen and (max-width: 850px) {
+				aside {
+					flex: 0 0 30wh;
+				}
+				.service-box {
+					flex-basis: 48%;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				header {
+					flex-direction: column;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<a href="">Isha Hitang</a>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">contact</a></li>
+				</ul>
+			</nav>
+
+			<div id="social-links">
+				<ul>
+					<li>
+						<a href=""><i class="fa-brands fa-github"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa-brands fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div id="main">
+			<aside class="">
+				<ul>
+					<li><a href="">some link</a></li>
+					<li><a href="">some link</a></li>
+					<li><a href="">some link</a></li>
+					<li><a href="">some link</a></li>
+					<li><a href="">some link</a></li>
+				</ul>
+				<img src="" alt="" />
+			</aside>
+			<article class="">
+				<h2>Welcome to my website</h2>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+					maiores magni cum modi totam neque recusandae ut voluptatem mollitia
+					libero quibusdam, excepturi earum corporis corrupti, nobis, temporibus
+					molestiae a delectus. Quis recusandae sunt repellat temporibus nihil,
+					ipsam dolor quidem architecto ratione ducimus vel ex autem cum
+					suscipit facere earum! Possimus vel aspernatur fugiat, aperiam sunt
+					dignissimos consequuntur illum eius dolorem!
+				</p>
+				<h2>Our Services</h2>
+				<div class="services-container">
+					<div class="service-box">
+						<div class="service-img">
+							<img src="girl3.jpg" alt="" />
+						</div>
+						<div class="service-title">
+							<h3>web designing</h3>
+						</div>
+						<div class="service-disc">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Exercitationem dolorum reprehenderit quod nihil error impedit t
+								culpa qui. Temporibus fugiat dolores ipsam consectetur?
+							</p>
+						</div>
+						<div class="call-to-action">
+							<a href="">Read More</a>
+						</div>
+					</div>
+
+					<div class="service-box">
+						<div class="service-img">
+							<img src="girl3.jpg" alt="" />
+						</div>
+						<div class="service-title">
+							<h3>web Development</h3>
+						</div>
+						<div class="service-disc">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Exercitationem dolorum reprehenderit quod nihil error impedit t
+								culpa qui. Temporibus fugiat dolores ipsam consectetur?
+							</p>
+						</div>
+						<div class="call-to-action">
+							<a href="">Read More</a>
+						</div>
+					</div>
+
+					<div class="service-box">
+						<div class="service-img">
+							<img src="" alt="" />
+						</div>
+						<div class="service-title">
+							<h3>mbile app development</h3>
+						</div>
+						<div class="service-disc">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Exercitationem dolorum reprehenderit quod nihil error impedit t
+								culpa qui. Temporibus fugiat dolores ipsam consectetur?
+							</p>
+						</div>
+						<div class="call-to-action">
+							<a href="">Read More</a>
+						</div>
+					</div>
+
+					<div class="service-box">
+						<div class="service-img">
+							<img src="" alt="" />
+						</div>
+						<div class="service-title">
+							<h3>web designing</h3>
+						</div>
+						<div class="service-disc">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Exercitationem dolorum reprehenderit quod nihil error impedit t
+								culpa qui. Temporibus fugiat dolores ipsam consectetur?
+							</p>
+						</div>
+						<div class="call-to-action">
+							<a href="">Read More</a>
+						</div>
+					</div>
+
+					<div class="service-box">
+						<div class="service-img">
+							<img src="girl3.jpg" alt="" />
+						</div>
+						<div class="service-title">
+							<h3>Android development</h3>
+						</div>
+						<div class="service-disc">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Exercitationem dolorum reprehenderit quod nihil error impedit t
+								culpa qui. Temporibus fugiat dolores ipsam consectetur?
+							</p>
+						</div>
+						<div class="call-to-action">
+							<a href="">Read More</a>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<footer>@ 2022 copyright</footer>
+	</body>
+</html>

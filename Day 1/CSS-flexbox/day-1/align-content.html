@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h4{
+           text-align: center;
+           padding: 100px;
+        }
+        .container{
+            background-color: #eee;
+            width: 200px;
+            height: 300px;
+            margin: 50px auto 0;
+            border: 3px solid #000;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            align-content: space-around;
+            /*
+            align-content means vertical alignment of doble rows or double columns whre align item mean the vertical alignment of single row or signle column
+            value: - 
+            1. flex-start
+            2. flex-end
+            3. center
+            4. stretch
+            5. space-around
+            6. space-between 
+            7.space-evenly
+            
+            */
+        }
+        .items{
+            margin: 5px;
+        }
+        .item1{
+            background: orangered;
+        }
+        .item2{
+            background: yellowgreen;
+        }
+        .item3{
+            background: mediumvioletred;
+        }
+        .item4{
+            background: mediumpurple;
+        }
+        .item5{
+            background: hotpink;
+        }
+        .item6{
+            background: teal;
+        }
+        .item7{
+            background: brown;
+        }
+        .item8{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h4>Isha Hitang : CSS Flex Direction</h4>
+    <div class="container">
+        <div class="items item1">1. Isha</div>
+        <div class="items item2">2. Raju</div>
+        <div class="items item3">3. Aiden</div>
+        <div class="items item4">4. Anil</div>
+        <div class="items item5">5. Raju</div>
+        <div class="items item6">6. Priti</div>
+        <div class="items item7">7. Kristina</div>
+        <div class="items item8">8. Tanu</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align form element</title>
+    <style>
+        h4{
+            text-align: center;
+        }
+        #wrapper{
+            background: #eee;
+            padding: 20px;
+            margin: 50px;
+          
+          
+           
+        }
+        #wrapper li{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;   
+            padding: 10px 0;
+        }
+        #wrapper li label{
+            flex: 1;
+        }
+        #wrapper li input{
+            flex: 3;
+        }
+        @media screen and (min-width:301px) and (max-width: 401px)
+       {
+        #wrapper li{
+            flex-direction: column;
+        }
+        #wrapper li input{
+            flex: 3;
+        }
+       }
+       @media screen and (min-width: 401px){
+            #wrapper li input{
+                flex: 3;
+            }
+        }
+        @media screen and (min-width: 768px){
+            #wrapper li input{
+                flex: 4;
+            }
+        }
+       
+        @media screen and (min-width: 920px){
+            #wrapper li input{
+                flex: 4;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            #wrapper li input{
+                flex: 10;
+            }
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <h4>Isha Hitang : Align form element</h4>
+    <form id="wrapper" action="">
+       <ul>
+        <li>
+            <label  for="">Name</label>
+            <input type="text">
+        </li>
+        <li>
+            <label  for="">Class</label>
+            <input type="text">
+        </li>
+        <li>
+            <label  for="">Email address</label>
+            <input type="text">
+        </li>
+        <li>
+            
+            <button>submit</button>
+        </li>
+       </ul>
+    </form>
+</body>
+</html>

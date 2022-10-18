@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink</title>
+    <style>
+        h4{
+            text-align: center;
+        }
+         .container{
+            background: #eee;
+            margin: 50px;
+            padding: 0px;
+            border: 3px solid #000;
+            display: flex;
+           
+         }
+         .items{
+          
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            height: 60px;
+          
+            
+         }
+         /*flex-shrink means if  you want to make any one of item resposive(shrinkable ) or not
+         default value is 1.
+         shrinkable in all values except 0*/
+         .item1{
+            background: greenyellow;
+            flex-basis: 300px;
+            flex-shrink: 1;/*it has set the  value of item1 to 200px and now it is shrinkable*/
+          /* flex:<flex-grow> <flex-shrink> <flex-basis>;*/
+           /* flex: 0 1 200px;*/
+         }
+         .item2{
+            background: yellow;
+         }
+         .item3{
+            background: palevioletred;
+         }
+         .item4{
+            background: teal;
+            flex-grow: 1;
+        
+         }
+    </style>
+</head>
+<body>
+    <h4>Isha Hitang: CSS-Flexbox</h4>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+    </div>
+</body>
+</html>

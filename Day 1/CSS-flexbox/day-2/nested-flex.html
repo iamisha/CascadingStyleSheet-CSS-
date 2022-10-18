@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Flex container</title>
+    <style>
+        h4{
+            text-align: center;
+        }
+        .container{
+            background: pink;
+            border: 1px sandybrown;
+            height: 400px;
+            width: 400px;
+            margin: 200px 700px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .item{
+            padding: 40px;
+            margin: 5px;
+        }
+        .item1{
+            background:orangered;
+        }
+        .item2{
+            background: orangered;
+            display: flex;
+           
+           
+        }
+        .items{
+            margin: 5px;
+            padding: 30px;
+        }
+        .item3{
+            background: orangered;
+        }
+        .item2 > .items{
+             background: wheat;
+             color: brown;
+             flex-grow: 1;
+        }
+       
+    </style>
+</head>
+<body>
+    <h4>Isha Hitang : CSS Flexbox-nested flex</h4>
+    <div class="container">
+        <div class="item item1">One</div>
+        <div class="item item2">
+            <div class="items item-1">Tea</div>
+            <div class="items item-2">Coffee</div>
+            <div class="items item-3">Water</div>
+        </div>
+        <div class="item item3">Three</div>
+    </div>
+</body>
+</html>

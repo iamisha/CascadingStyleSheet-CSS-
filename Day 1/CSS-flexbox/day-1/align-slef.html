@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Self</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h4{
+           text-align: center;
+           padding: 100px;
+        }
+        .container{
+            background-color: #eee;
+            width: 600px;
+            height: 400px;
+            margin: 50px auto 0;
+            border: 3px solid #000;
+            display: flex;
+            flex-direction: row;
+        
+            /*
+            Align-self means vertical alignment of the any specific element
+            values:- 
+            1. auto
+            2. flex-start
+            3. flex-end
+            4. center
+            5. stretch
+            6. baseline
+            */
+        }
+        .items{
+            margin: 5px;
+        }
+        .item1{
+            background: orangered;
+        }
+        .item2{
+            background: yellowgreen;
+            align-self: flex-start;
+        }
+        .item3{
+            background: mediumvioletred;
+            align-self: flex-end;
+        }
+        .item4{
+            background: mediumpurple;
+            align-self: center;
+        }
+        .item5{
+            background: hotpink;
+            stretch
+        }
+    </style>
+</head>
+<body>
+    <h4>Isha Hitang : CSS Flex Direction</h4>
+    <div class="container">
+        <div class="items item1">1. Isha</div>
+        <div class="items item2">2. Raju</div>
+        <div class="items item3">3. Aiden</div>
+        <div class="items item4">4. Anil</div>
+        <div class="items item5">5. Raju</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-grow</title>
+    <style>
+        h4{
+            text-align: center;
+            margin-top: 200px;
+        }
+        .container{
+            border: 3px solid rgb(212, 217, 223);
+            width: 800px;
+            height: 140px;
+            margin: 140px 520px auto;
+            display: flex;
+            flex-direction: row;
+            
+            
+        }
+        .items{
+            margin: 5px;
+            padding: 20px;
+            color: burlywood;
+            flex-grow: 1;
+        }
+        /*flex-grow: numerical value; where default value is 0.It does work in items*/
+        .item1{
+            background: teal;
+            flex-grow: 2;
+
+        }
+        .item2{
+            background: lightcoral;
+        
+        }
+        .item3{
+            background: yellow;
+        
+        }
+        .item4{
+            background:greenyellow;
+
+            flex-grow:1;
+        }
+        .item5{
+            background: palevioletred;
+        
+        }
+    </style>
+</head>
+<body>
+    <h4>Isha Hitang : CSS-Flexbox</h4>
+    <div class="container">
+        <div class="items item1">1. c</div>
+        <div class="items item2">2. c++</div>
+        <div class="items item3">3. python</div>
+        <div class="items item4">4. Java</div> 
+        <div class="items item5">5. Data structure</div>
+    </div>
+</body>
+</html>
