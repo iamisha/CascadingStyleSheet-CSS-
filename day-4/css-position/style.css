@@ -1,0 +1,45 @@
+.container{
+    border: 2px solid burlywood;
+    background-color: hotpink;
+    height: 1077px;
+}
+.box {
+    border: 2px solid teal;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+    display: inline-block;
+}
+#box1{
+    background-color: beige;
+    position: static;
+}
+#box2{
+    background-color: aquamarine;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#box3{
+    background: rgb(160, 69, 168);
+    position: absolute;
+    top: 44px;
+    left: 34px;
+}
+#box4{
+    background-color: #fff;
+    position: fixed;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 50%;
+}
+#box4 p{
+    text-align: center;
+    margin-top: 60px;
+    font-size: small;
+}
+#box5{
+    background-color: blanchedalmond;
+    position: sticky;
+    top: 0;
+}
